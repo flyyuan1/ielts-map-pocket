@@ -90,7 +90,7 @@ node_modules/
 .supabase/
 ```
 
-命令：`npm install --ignore-scripts`。只在确认 esbuild 所需的安装脚本后对该准确版本执行 `npm rebuild esbuild`；不执行不明依赖的安装脚本。
+命令：`npm install --ignore-scripts`。检查锁定版本 esbuild 与 supabase 的安装脚本和二进制来源后，分别执行 `npm rebuild esbuild`、`npm rebuild supabase`，并用各自版本命令确认可执行；不执行不明依赖的安装脚本。
 
 - [ ] 写出以下实际行为测试，并先运行，确认由于模块缺失而失败。
 
