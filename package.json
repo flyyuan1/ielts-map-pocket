@@ -1,0 +1,11 @@
+{
+  "name": "ielts-map-pocket",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build-account.mjs"
+  },
+  "dependencies": { "@supabase/supabase-js": "2.118.0" },
+  "devDependencies": { "esbuild": "0.28.2", "supabase": "2.122.0" }
+}
